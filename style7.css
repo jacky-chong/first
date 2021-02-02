@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: salmon;
+}
+
+p{
+    background-color: #edf0f1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: salmon;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: salmon;
+}
+
+.nav_links {
+    list-style: none;
+    background-color: salmon;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding:  0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button{
+    padding: 10px 24px;
+    background-color: #ff1616;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #995656;
+}
+
+button:hover {
+    background-color: rgba(169, 0, 0, 0.8);
+}
+
+div{
+    background-color: #edf0f1;
+}
+img{
+	border: 0;
+	padding:0;
+	margin:0;
+}
+#main-container1{
+    padding: 40px;
+    background-color: #edf0f1;
+}
+
+.movie-container{
+	
+	min-height:350px;
+	background-color: #edf0f1;
+	margin-top:20px;
+}
+.left-column{
+	background-color: #edf0f1;
+	width: 90px;
+	float: left;
+}
+.right-column{
+	
+	margin-left:200px;
+    padding: 20px;
+    color: #000;
+}
+.header1{
+	
+	background-color: #ff0000;
+	padding:15px;
+}
+
+h1{
+    background-color: #ff0000;
+	color:#fff;
+	font-size:18px;
+	font-weight: bold;
+	display: inline;
+	}
+
+.year{
+color:#fff;
+font-size:18px;
+background-color: #ff0000;
+font-weight: bold;
+display: inline;
+}
+.content1{
+background: #edf0f1;
+
+}
+.content.description{
+
+background-color: #edf0f1;
+}
+.content.text{
+color:#000;
+background-color: #edf0f1;
+}
+.content.blue{
+	background-color: #edf0f1;
+    color: #000;
+    font-size: 15px;
+    font-weight:bold;
+}
+.content.yellow{
+background-color: #edf0f1;
+color: #ff4242;
+
+}
+.content.green{
+background-color: #edf0f1;
+color: rgb(77, 6, 170);
+}
+
+.content.purple{
+    background-color: #edf0f1;
+    color: rgb(61, 192, 35);
+    }
+
+#ratings{
+	font-size: 20px;
+	font-weight:bold;
+	text-align: center;
+	line-height: 38px;
+	color :#000;
+	width:125px;
+	}
+
+.metascore{
+	background:#61c74f;
+}
+.bottom{
+    
+	margin-top: 50px;
+}
+
+.button1{
+    background-color: rgb(52, 160, 187);
+}
+
+.button1:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.button2{
+    background-color: rgb(45, 52, 54);
+}
+
+.button2:hover{
+    background-color: rgba(114, 140, 146, 0.8);
+}
+.nav_links1 {
+    list-style: none;
+    background-color: rgb(101, 114, 128);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+.nav_links1 li {
+    background-color: rgb(101, 114, 128);
+    display: inline-block;
+    padding:  0px 20px;
+}
+
+.nav_links1 li a {
+    background-color: rgb(101, 114, 128);
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links1 li a:hover {
+    color: #93dff1;
+}
+
+
+.rating{
+    position: absolute;
+    top: 67%;
+    left: 25.5%;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    display:flex;
+    background-color: #a2d6e7;
+}
+.rating input{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width:20px;
+  
+
+}
+.rating label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position:relative;
+    display:block;
+    font-size: 20px;
+    color: rgb(134, 134, 134);
+}
+.rating label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position:absolute;
+    display:block;
+    font-size: 20px;
+    color: #f3ef1f;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+.comment-container{
+	
+	min-height:150px;
+	background-color: #fff;
+	margin-top:20px;
+}
+.allcomment-container{
+	
+    min-height:150px;
+    max-height:200px;
+	background-color: rgb(211, 238, 211);
+	margin-top:0px;
+}
