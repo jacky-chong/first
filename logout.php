@@ -6,5 +6,5 @@ session_unset();
 
 //destroy the session
 session_destroy();
-header("location: login.html");
+header("location: index.html");
 ?>
